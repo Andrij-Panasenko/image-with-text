@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="image-with-text.css">
+    <title>Image with text</title>
+</head>
+<body>
+    <section class="image-with-text">
+        <div class="image-with-text__container">
+            <div class="image-with-text__image-container">
+                <picture>
+                    <source media="(max-width: 420px)" srcset="./images/img-420-1x.png 1x, ./images/img-420-2x.png 2x">
+                    <source media="(max-width: 991px)" srcset="./images/img-991-1x.png 1x, ./images/img-991-2x.png 2x">
+                    <img src="./images/img-991-1x.png" alt="Image alt text" class="image-with-text__image">
+                </picture>
+            </div>
+            <div class="image-with-text__text-container">
+                <div class="image-with-text__text-content">
+                    <h2 class="image-with-text__title">What does it mean to Live Inspired?</h2>
+                    <p class="image-with-text__subtitle">Our story</p>
+                    <p class="image-with-text__description">To live inspired, is to live a life true to your values, a life that’s meaningful, and a life of purpose. To fill with
+                    goodness your body, mind, and soul. To live inspired, is to choose love over fear, to choose compassion, kindness, and
+                    joy. To be courageous and tender in the face of life’s challenges; and brave and fearless when taking chances. To
+                    embrace change and imperfection. To be yourself and to love yourself. To know that even when you make a mistake, you can
+                    choose again, and keep moving forward. Always learning, unlearning, evolving, thriving, connecting, creating. To live
+                    inspired, is to live a life worth living.</p>
+                    <a class="image-with-text__button-link focus-visible link" href="#">Read Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+

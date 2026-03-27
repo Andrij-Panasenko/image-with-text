@@ -1,0 +1,135 @@
+:root {
+    --color-heading: #000000;
+    --color-text: #535353;
+    --color-button-border: #000000;
+    --color-button-bg: transparent;
+    --container-width: 1680px;
+    --heading-text-font-size: 28px;
+    --subheading-text-font-size: 16px;
+    --description-text-font-size: 16px;
+    --button-text-font-size: 16px;
+    --font-family: 'Inter', serif;
+    --transition: 0.3s ease-in-out;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--color-text);
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.focus-visible:focus-visible {
+    outline: 1px solid #000000;
+}
+
+
+.image-with-text {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: var(--container-width);
+}
+
+.image-with-text__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* image block */
+.image-with-text__image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 16px;
+}
+
+/* text block */
+.image-with-text__title {
+    font-size: var(--heading-text-font-size);
+    font-weight: 500;
+    line-height: 34px;
+    color: var(--color-heading);
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.image-with-text__subtitle {
+    font-size: var(--subheading-text-font-size);
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--color-heading);
+    margin-bottom: 16px;
+}
+
+.image-with-text__description {
+    font-size: var(--description-text-font-size);
+    line-height: 24px;
+    color: var(--color-text);
+    margin-bottom: 24px;
+    word-break: break-word;
+}
+
+.image-with-text__button-link {
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: var(--button-text-font-size);
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--color-heading);
+    background-color: var(--color-button-bg);
+    border: 1px solid var(--color-button-border);
+    border-radius: 50px;
+
+    transition: var(--transition);
+}
+
+.image-with-text__button-link:hover {
+    background-color: var(--color-button-border);
+    color: #ffffff;
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    .image-with-text__container {
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .image-with-text__image-container {
+        width: 50%;
+    }
+
+    .image-with-text__text-container {
+        width: 50%;
+    }
+
+    .image-with-text__text-content {
+        padding: 24px 48px;
+    }
+
+    .image-with-text__title {
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .image-with-text__description {
+        margin-bottom: 32px;
+        font-size: 18px;
+    }
+}
