@@ -52,10 +52,23 @@ img {
 }
 
 /* image block */
+.image-with-text__image-container {
+    position: relative;
+}
+
+.image-with-text__picture {
+    padding-top: 73%; /* 4:3 aspect ratio */
+    display: block;
+}
+
 .image-with-text__image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    aspect-ratio: 4 / 3;
+    object-position: 50% 50%;
+    object-fit: cover;
     border-radius: 16px;
 }
 
