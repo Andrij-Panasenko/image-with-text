@@ -76,7 +76,7 @@ img {
 .image-with-text__title {
     font-size: var(--heading-text-font-size);
     font-weight: 500;
-    line-height: 34px;
+    line-height: 1.21;
     color: var(--color-heading);
     margin: 0;
     margin-bottom: 16px;
@@ -85,14 +85,14 @@ img {
 .image-with-text__subtitle {
     font-size: var(--subheading-text-font-size);
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.21;
     color: var(--color-heading);
     margin-bottom: 16px;
 }
 
 .image-with-text__description {
     font-size: var(--description-text-font-size);
-    line-height: 24px;
+    line-height: 1.21;
     color: var(--color-text);
     margin-bottom: 24px;
     word-break: break-word;
@@ -139,7 +139,6 @@ img {
 
     .image-with-text__title {
         font-size: 38px;
-        line-height: 46px;
     }
     .image-with-text__description {
         margin-bottom: 32px;
