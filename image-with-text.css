@@ -41,7 +41,7 @@ img {
 
 .image-with-text {
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 16px;
     max-width: var(--container-width);
 }
 
