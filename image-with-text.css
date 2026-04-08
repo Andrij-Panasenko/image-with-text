@@ -94,7 +94,6 @@ img {
     font-size: var(--description-text-font-size);
     line-height: 1.21;
     color: var(--color-text);
-    margin-bottom: 24px;
     word-break: break-word;
 }
 
@@ -108,6 +107,7 @@ img {
     background-color: var(--color-button-bg);
     border: 1px solid var(--color-button-border);
     border-radius: 50px;
+    margin-top: 24px;
 
     transition: var(--transition);
 }
@@ -141,7 +141,10 @@ img {
         font-size: 38px;
     }
     .image-with-text__description {
-        margin-bottom: 32px;
         font-size: 18px;
+    }
+
+    .image-with-text__button-link {
+        margin-top: 32px;
     }
 }
