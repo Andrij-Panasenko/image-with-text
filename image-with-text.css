@@ -9,7 +9,6 @@
     --description-text-font-size: 16px;
     --button-text-font-size: 16px;
     --font-family: 'Inter', serif;
-    --transition: 0.3s ease-in-out;
 }
 
 body {
@@ -78,7 +77,6 @@ img {
     font-weight: 500;
     line-height: 1.21;
     color: var(--color-heading);
-    margin: 0;
     margin-bottom: 16px;
 }
 
@@ -109,7 +107,9 @@ img {
     border-radius: 50px;
     margin-top: 24px;
 
-    transition: var(--transition);
+    transition-property: background-color, color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
 }
 
 .image-with-text__button-link:hover {
