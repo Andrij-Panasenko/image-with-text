@@ -9,6 +9,7 @@
     --description-text-font-size: 16px;
     --button-text-font-size: 16px;
     --font-family: 'Inter', serif;
+    --timing: .3s;
 }
 
 body {
@@ -109,7 +110,7 @@ img {
 
     transition-property: background-color, color;
     transition-timing-function: ease-in-out;
-    transition-duration: .3s;
+    transition-duration: var(--timing);
 }
 
 .image-with-text__button-link:hover {
